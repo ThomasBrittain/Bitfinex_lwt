@@ -1,0 +1,25 @@
+Bitfinex_lwt is a module of lwt friendly binding to the Bitfinex REST API.
+Is is setup as a functor that will take a module of Coinbase user account information.
+
+It has the following dependencies:
+Lwt
+Lwt.syntax
+Yojson
+Cohttp
+hex
+nocrypto
+
+Generate all of the Bitfinex API bindings for from user account information as follows:
+
+module MyAccountInfo : AccountInfo =
+  struct
+    let public_key = "api_public_key_goes_here"
+    let private_key = "api_private_key_goes_here"
+  end
+
+module BitfinexAPI = Make (MyAccountInfo)
+
+Then all of the Bitfinex API functions can be called from the BitfinexAPI module.
+
+PLEASE NOTE: The Bitfinex API is does change, you may run into errors.
+Please report all bugs to https://github.com/tbads/Bitfinex_lwt.
