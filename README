@@ -1,5 +1,5 @@
-Bitfinex_lwt is a module of lwt friendly binding to the Bitfinex REST API.
-Is is setup as a functor that will take a module of Coinbase user account information.
+Bitfinex_lwt is a module of lwt friendly bindings to the Bitfinex REST API.
+It is setup as a functor that will take a module of Bitfinex user account information.
 
 It has the following dependencies:
 Lwt
