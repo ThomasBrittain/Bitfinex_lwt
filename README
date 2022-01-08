@@ -22,4 +22,4 @@ module BitfinexAPI = Make (MyAccountInfo)
 Then all of the Bitfinex API functions can be called from the BitfinexAPI module.
 
 PLEASE NOTE: The Bitfinex API is does change, you may run into errors.
-Please report all bugs to https://github.com/tbads/Bitfinex_lwt.
+Please report all bugs to https://github.com/thomasbrittain/Bitfinex_lwt.
